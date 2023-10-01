@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<form>
+    <label>Name: {{ data.name }}</label><br><br>
+    <label>Age: {{ data.age }}</label><br><br>
+    <label>DOB: {{ data.dob }}</label><br><br>
+    <label>Country code: {{ data.country_code }}</label><br><br>
+    <label>Contact: {{ data.contact }}</label><br><br>
+    <label>Mail: {{ data.mail }}</label><br><br>
+    <label>Address: <p>{{ data.address }}</p></label><br><br>
+    <label>City: {{ data.city }}</label><br><br>
+    <label>Postal: {{ data.postal }}</label><br><br>
+    <label>State: {{ data.state }}</label><br><br>
+    <label>Country: {{ data.country }}</label><br><br>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Need to update details? <a class="ml-2" href="{% url 'detailsm-create' %}">Update details</a>
+        </small>
+    </div>
+</form>
+{% endblock content %}
